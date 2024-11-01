@@ -1,6 +1,14 @@
+// fonts
 // import localFont from "next/font/local";
-import { JetBrains_Mono } from 'next/font/google';
+import { JetBrains_Mono } from "next/font/google";
+
+// css
 import "./globals.css";
+
+// components
+import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
+import StairTransition from "@/components/StairTransition";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -15,9 +23,9 @@ import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ['100', '200','300','400','500','600', '700', '800'],
-  variable: '--font-jetbrainsMono'
-})
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-jetbrainsMono",
+});
 
 export const metadata = {
   title: "JS",
@@ -31,7 +39,9 @@ export default function RootLayout({ children }) {
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`${jetbrainsMono.variable}`}
       >
-        {children}
+        <Header />
+        <StairTransition />
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
