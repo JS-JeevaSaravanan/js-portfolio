@@ -44,6 +44,7 @@ Pending:
 - host in domain
 - add more contents
 - link previous portfolio
+- put constant files and common constants
 
 Referred :
 https://www.youtube.com/watch?v=dImgZ_AH7uA

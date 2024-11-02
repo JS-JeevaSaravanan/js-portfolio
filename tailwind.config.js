@@ -5,6 +5,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    // "./app/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     container: {
@@ -22,10 +23,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#1c1c22",
+        // primary: "#1c1c22",
+        // accent: {
+        //   DEFAULT: "#00ff99",
+        //   hover: "#00e187",
+        // },
+        primary: "#1c1c22", // Keeping the same for primary
         accent: {
-          DEFAULT: "#00ff99",
-          hover: "#00e187",
+          DEFAULT: "#00aaff", // A bright blue
+          hover: "#0099e1", // A slightly darker blue for hover
         },
 
         // background: "var(--background)",
