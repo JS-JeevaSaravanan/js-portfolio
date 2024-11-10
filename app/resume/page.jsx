@@ -6,10 +6,34 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
+  FaSass,
   FaNodeJs,
+  FaPython,
+  FaGitAlt,
+  FaGithub,
+  FaNpm,
+  FaDocker,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiRedux,
+  SiExpress,
+  SiPostman,
+  SiEslint,
+  SiWebpack,
+  SiStorybook,
+  SiReactrouter,
+  SiJest,
+  SiCypress,
+  SiFlask,
+  SiTypeorm,
+} from "react-icons/si";
+
+import { PiFileSqlDuotone, PiPackage } from "react-icons/pi";
+
+import { DiRedis } from "react-icons/di";
 
 // components
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -27,8 +51,7 @@ import { motion } from "framer-motion";
 // about data
 const about = {
   title: "About me",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem sint dolore culpa, illum accusamus architecto quisquam sequi consectetur doloribus. Dolorum architecto quasi modi omnis blanditiis eligendi, ex veritatis quia.",
+  description: `I am a dedicated Full Stack Developer with a passion for crafting seamless, scalable applications. With a strong foundation in both frontend and backend technologies, I bring a holistic approach to problem-solving and project execution. I thrive on tackling complex challenges, optimizing performance, and ensuring high-quality code. My experience spans developing interactive UIs, managing efficient data flow, and implementing modern development practices. I'm driven by continuous learning and contributing innovative solutions to make impactful software.`,
   info: [
     {
       filedName: "Name",
@@ -43,16 +66,16 @@ const about = {
       fieldValue: "4+ Years",
     },
     {
-      filedName: "Skype",
-      fieldValue: "Jeeva.01",
+      filedName: "Email",
+      fieldValue: "jeevatamil2000@gmail.com",
     },
     {
       filedName: "Nationality",
       fieldValue: "Indian",
     },
     {
-      filedName: "Email",
-      fieldValue: "jeevatamil2000@gmail.com",
+      filedName: "Expertise",
+      fieldValue: "Fullstack",
     },
     {
       filedName: "Freelance",
@@ -69,8 +92,7 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem sint dolore culpa, illum accusamus architecto quisquam sequi consectetur doloribus. Dolorum architecto quasi modi omnis blanditiis eligendi, ex veritatis quia.",
+  description: `Full Stack Developer with extensive experience in building scalable web applications using React, Next.js, Node.js, and Python. Proficient in performance optimization, state management, microservices, Docker, and CI/CD practices. Strong background in creating interactive UI components and tackling complex backend challenges.`,
   items: [
     {
       company: "Lumel Technologies Inc.",
@@ -109,13 +131,22 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem sint dolore culpa, illum accusamus architecto quisquam sequi consectetur doloribus. Dolorum architecto quasi modi omnis blanditiis eligendi, ex veritatis quia.",
+  description: `I hold a Bachelor's in Computer Science & Engineering, with expertise in programming, algorithms, and system design. Through coding competitions, workshops, and team projects, I applied my knowledge to real-world challenges and developed strong problem-solving, leadership, and teamwork skills.`,
   items: [
     {
       institution: "Government College of Engineering (GEC), Erode",
       degree: "Bachelors in Computer Science & Engineering",
       duration: "May2017 - Apr2021",
+    },
+    {
+      institution: "S.V.B Higher Secondary School, Tiruchengode",
+      degree: "Higher Secondary Education (HSC)",
+      duration: "Apr2015 - Mar2017",
+    },
+    {
+      institution: "S.R.V Boys Higher Secondary School, Rasipuram",
+      degree: "Secondary Education (SSLC)",
+      duration: "Jun2013 - Mar2015",
     },
   ],
 };
@@ -123,8 +154,7 @@ const education = {
 // skills data
 const skills = {
   title: "My skills",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem sint dolore culpa, illum accusamus architecto quisquam sequi consectetur doloribus. Dolorum architecto quasi modi omnis blanditiis eligendi, ex veritatis quia.",
+  description: `I am a versatile Full Stack Developer with a rich skill set covering a broad range of technologies and tools. Below is a snapshot of the key skills that enable me to design, develop, and maintain robust, high-performance applications efficiently.`,
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -134,29 +164,112 @@ const skills = {
       icon: <FaCss3 />,
       name: "css 3",
     },
+
+    {
+      icon: <SiTailwindcss />,
+      name: "tailwind.css",
+    },
+
+    {
+      icon: <FaSass />,
+      name: "sass",
+    },
     {
       icon: <FaJs />,
       name: "Javascript",
     },
     {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
+      icon: <SiTypescript />,
+      name: "Typescript",
     },
     {
       icon: <FaNodeJs />,
       name: "node.js",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <SiExpress />,
+      name: "express.js",
+    },
+
+    {
+      icon: <FaReact />,
+      name: "react.js",
+    },
+    {
+      icon: <SiRedux />,
+      name: "Redux",
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: "next.js",
+    },
+    {
+      icon: <SiReactrouter />,
+      name: "reactrouter",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <SiFlask />,
+      name: "Flask",
+    },
+    {
+      icon: <PiFileSqlDuotone />,
+      name: "Sql",
+    },
+    {
+      icon: <DiRedis />,
+      name: "Redis",
+    },
+    {
+      icon: <SiTypeorm />,
+      name: "TypeORM",
+    },
+    {
+      icon: <FaGitAlt />,
+      name: "Git",
+    },
+    {
+      icon: <FaDocker />,
+      name: "Docker",
+    },
+    {
+      icon: <FaGithub />,
+      name: "Github",
+    },
+    {
+      icon: <SiStorybook />,
+      name: "storybook",
+    },
+    {
+      icon: <SiJest />,
+      name: "jest",
+    },
+    {
+      icon: <SiCypress />,
+      name: "cypress",
+    },
+    {
+      icon: <SiPostman />,
+      name: "api",
+    },
+    {
+      icon: <SiEslint />,
+      name: "eslint",
+    },
+    {
+      icon: <SiWebpack />,
+      name: "webpack",
+    },
+    {
+      icon: <PiPackage />,
+      name: "pip",
+    },
+    {
+      icon: <FaNpm />,
+      name: "npm",
     },
   ],
 };

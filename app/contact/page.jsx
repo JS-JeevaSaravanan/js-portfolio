@@ -59,9 +59,9 @@ const Contact = () => {
               <h3 className="text-4xl text-accent">Let's work together</h3>
 
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-                veniam? Accusamus adipisci vitae maxime, sed, incidunt iusto ut
-                et pariatur nulla odio fugit itaque dolorem rerum! Cupiditate!
+                Interested in collaborating or have an exciting project in mind?
+                Feel free to reach out, and let's turn your ideas into reality
+                with innovative and scalable solutions.
               </p>
 
               {/* input  */}
@@ -80,9 +80,11 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="website">Website Development</SelectItem>
+                    <SelectItem value="app">App Development</SelectItem>
+                    <SelectItem value="fullstack">
+                      Full stack Development
+                    </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
