@@ -15,11 +15,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-
-
 import Link from "next/link";
 import Image from "next/image";
-
 
 // components
 import WorkSliderBtns from "@/components/WorkSliderBtns";
@@ -27,6 +24,50 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "fullstack",
+    title: "torrent - web",
+    description: `Torrent Power is a web app that lets users download and stream torrents directly in the browser. It supports magnetic links, real-time video streaming, and offers simple download management. Built with React.js, Node.js, and WebTorrent, it provides a lightweight, platform-independent torrenting experience.`,
+    stack: [
+      {
+        name: "React",
+      },
+      {
+        name: "Material UI",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "MongoDB",
+      },
+    ],
+    image: "/assets/work/torrent-web-shot.jpeg",
+    live: "/assets/work/TorrentWebClient.docx",
+    github: "https://github.com/JS-JeevaSaravanan/torrent_web",
+  },
+  {
+    num: "02",
+    category: "frontend",
+    title: "Portfolio",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id facere temporibus atque, sint similique accusantium voluptate reprehenderit non earum laborum ad illum eius porro voluptates officiis reiciendis commodi unde.",
+    stack: [
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Tailwind.css",
+      },
+      {
+        name: "Framer-motion",
+      },
+    ],
+    image: "/assets/work/portfolio-shot.png",
+    live: "https://js-jeevasaravanan-portfolio.vercel.app",
+    github: "https://github.com/JS-JeevaSaravanan/js-portfolio",
+  },
+  {
+    num: "03",
     category: "frontend",
     title: "project 1",
     description:
@@ -47,7 +88,7 @@ const projects = [
     github: "",
   },
   {
-    num: "02",
+    num: "04",
     category: "fullstack",
     title: "project 2",
     description:
@@ -68,7 +109,7 @@ const projects = [
     github: "",
   },
   {
-    num: "03",
+    num: "05",
     category: "frontend",
     title: "project 1",
     description:
@@ -147,7 +188,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button  */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -161,7 +202,7 @@ const Work = () => {
                 </Link>
 
                 {/* github project button  */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
