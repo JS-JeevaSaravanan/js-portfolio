@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight, BsGithub, BsCardImage } from "react-icons/bs";
 
 import {
   Tooltip,
@@ -24,7 +24,7 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "fullstack",
+    category: "web app",
     title: "torrent - web",
     description: `Torrent Power is a web app that lets users download and stream torrents directly in the browser. It supports magnetic links, real-time video streaming, and offers simple download management. Built with React.js, Node.js, and WebTorrent, it provides a lightweight, platform-independent torrenting experience.`,
     stack: [
@@ -47,10 +47,60 @@ const projects = [
   },
   {
     num: "02",
+    category: "website",
+    title: "Fish Market",
+    description:
+      "Aazhi Fishes Market is an online platform that recreates the traditional fish market experience. Users can browse, learn about, and shop for fresh seafood with detailed product pages, nutritional information, and interactive galleries. The responsive, user-friendly design ensures a convenient and informative shopping experience.",
+    stack: [
+      {
+        name: "Bootstrap",
+      },
+      {
+        name: "JQuery",
+      },
+      {
+        name: "Express.js",
+      },
+      {
+        name: "MySql",
+      },
+      {
+        name: "AWS",
+      },
+    ],
+    image: "/assets/work/fish-market-shot.png",
+    live: "http://aazhifishes.com/",
+    github: "https://github.com/JS-JeevaSaravanan/torrent_web",
+  },
+  {
+    num: "03",
+    category: "hybrid app",
+    title: "expense split",
+    description: `The Expense Tracker and Split App is a hybrid tool for managing personal finances and splitting group expenses. It tracks income, expenses, and budgets, while simplifying cost splitting for shared transactions. Ideal for both individual and group use, it offers a seamless, user-friendly experience.`,
+    stack: [
+      {
+        name: "React Native",
+      },
+      {
+        name: "Mobx",
+      },
+      {
+        name: "Firebase",
+      },
+      {
+        name: "Expo",
+      },
+    ],
+    image: "/assets/work/expense-tracker.png",
+    live: "/assets/work/Split-easy",
+    github: "https://github.com/JS-JeevaSaravanan/ProjectY",
+  },
+  {
+    num: "04",
     category: "frontend",
     title: "Portfolio",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id facere temporibus atque, sint similique accusantium voluptate reprehenderit non earum laborum ad illum eius porro voluptates officiis reiciendis commodi unde.",
+      "Jeeva Saravanan's Portfolio is a web app showcasing my skills, projects, and professional growth. With an intuitive design, smooth animations, and detailed case studies, it highlights my expertise in software development and offers a way to connect and explore my work.",
     stack: [
       {
         name: "Next.js",
@@ -67,64 +117,53 @@ const projects = [
     github: "https://github.com/JS-JeevaSaravanan/js-portfolio",
   },
   {
-    num: "03",
-    category: "frontend",
-    title: "project 1",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id facere temporibus atque, sint similique accusantium voluptate reprehenderit non earum laborum ad illum eius porro voluptates officiis reiciendis commodi unde.",
-    stack: [
-      {
-        name: "Html 5",
-      },
-      {
-        name: "Css 3",
-      },
-      {
-        name: "Javascript",
-      },
-    ],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "04",
-    category: "fullstack",
-    title: "project 2",
-    description:
-      "Earum laborum ad illum eius porro voluptates officiis reiciendis commodi unde.",
-    stack: [
-      {
-        name: "Next.js",
-      },
-      {
-        name: "Tailwind.css",
-      },
-      {
-        name: "Node.js",
-      },
-    ],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
     num: "05",
-    category: "frontend",
-    title: "project 1",
+    category: "Tasks",
+    title: "Task Manager",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id facere temporibus atque, sint similique accusantium voluptate reprehenderit non earum laborum ad illum eius porro voluptates officiis reiciendis commodi unde.",
+      "Task Manager is a simple and intuitive to-do list app built to help users manage their daily tasks. It allows users to add, edit, and delete tasks, with an option to mark tasks as complete. Built with modern frontend technologies, it features a clean, responsive UI and provides an excellent user experience.",
     stack: [
-      {
-        name: "Next.js",
-      },
-      {
-        name: "Tailwind.css",
-      },
+      { name: "React.js" },
+      { name: "Redux" },
+      { name: "LocalStorage" },
+      { name: "Framer Motion" },
     ],
-    image: "/assets/work/thumb3.png",
+    image: "/assets/work/task-manager-shot.jpeg",
     live: "",
-    github: "",
+    github: "https://github.com/JS-JeevaSaravanan/Task-Manager-app",
+  },
+  {
+    num: "06",
+    category: "Blogger",
+    title: "Blog Platform",
+    description:
+      "Blog Platform is a full-stack application where users can create, read, update, and delete blog posts. It includes features such as user authentication, Markdown support, and real-time commenting. The app provides a smooth, interactive interface for both authors and readers.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind.css" },
+      { name: "Node.js" },
+      { name: "MongoDB" },
+      { name: "JWT" },
+    ],
+    image: "/assets/work/blog-platform.png",
+    live: "",
+    github: "https://github.com/JS-JeevaSaravanan/NextJs-14-Blog-App",
+  },
+  {
+    num: "07",
+    category: "Weather Site",
+    title: "Weather App",
+    description:
+      "Weather App provides users with real-time weather information based on their location or a selected city. It integrates with a weather API to provide data such as temperature, humidity, wind speed, and weather conditions. The app has an elegant, user-friendly interface designed for both desktop and mobile devices.",
+    stack: [
+      { name: "HTML 5" },
+      { name: "CSS 3" },
+      { name: "JavaScript" },
+      { name: "OpenWeather API" },
+    ],
+    image: "/assets/work/weather-app.png",
+    live: "",
+    github: "https://github.com/JS-JeevaSaravanan/Simple-Weather-App",
   },
 ];
 
@@ -188,32 +227,52 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button  */}
-                <Link href={project.live} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Live project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.live && (
+                  <Link href={project.live} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
 
                 {/* github project button  */}
-                <Link href={project.github} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github repository</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.github && (
+                  <Link href={project.github} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Github repository</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
+
+                {/* Image Button */}
+                {project.image && (
+                  <Link href={project.image} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsCardImage className="text-white text-3xl group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>View Image</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -237,7 +296,7 @@ const Work = () => {
                           src={project.image}
                           fill
                           className="object-cover"
-                          alt=""
+                          alt={project.title}
                         />
                       </div>
                     </div>
