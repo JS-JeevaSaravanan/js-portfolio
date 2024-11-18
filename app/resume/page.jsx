@@ -134,7 +134,7 @@ const education = {
   description: `I hold a Bachelor's in Computer Science & Engineering, with expertise in programming, algorithms, and system design. Through coding competitions, workshops, and team projects, I applied my knowledge to real-world challenges and developed strong problem-solving, leadership, and teamwork skills.`,
   items: [
     {
-      institution: "Government College of Engineering (GEC), Erode",
+      institution: "Government College of Engineering (GCE), Erode",
       degree: "Bachelors in Computer Science & Engineering",
       duration: "May2017 - Apr2021",
     },
