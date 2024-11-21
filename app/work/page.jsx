@@ -25,6 +25,28 @@ const projects = [
   {
     num: "01",
     category: "web app",
+    title: "markdown editor",
+    description: `A modern Markdown editor with live preview, syntax highlighting, and multi-file support. It enables seamless writing, previewing, and managing of Markdown documents with features like local storage, import/export, and real-time collaboration.`,
+    stack: [
+      {
+        name: "React",
+      },
+      {
+        name: "Node",
+      },
+      {
+        name: "Socket",
+      },
+      {
+        name: "Yarn monorepo",
+      },
+    ],
+    image: "/assets/work/markdown-shot.png",
+    github: "https://github.com/JS-JeevaSaravanan/live-markdown-editor-project",
+  },
+  {
+    num: "02",
+    category: "web app",
     title: "torrent - web",
     description: `Torrent Power is a web app that lets users download and stream torrents directly in the browser. It supports magnetic links, real-time video streaming, and offers simple download management. Built with React.js, Node.js, and WebTorrent, it provides a lightweight, platform-independent torrenting experience.`,
     stack: [
@@ -46,7 +68,7 @@ const projects = [
     github: "https://github.com/JS-JeevaSaravanan/torrent_web",
   },
   {
-    num: "02",
+    num: "03",
     category: "website",
     title: "Fish Market",
     description:
@@ -73,7 +95,7 @@ const projects = [
     github: "https://github.com/JS-JeevaSaravanan/torrent_web",
   },
   {
-    num: "03",
+    num: "04",
     category: "hybrid app",
     title: "expense split",
     description: `The Expense Tracker and Split App is a hybrid tool for managing personal finances and splitting group expenses. It tracks income, expenses, and budgets, while simplifying cost splitting for shared transactions. Ideal for both individual and group use, it offers a seamless, user-friendly experience.`,
@@ -96,7 +118,7 @@ const projects = [
     github: "https://github.com/JS-JeevaSaravanan/ProjectY",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "Portfolio",
     description:
@@ -117,7 +139,7 @@ const projects = [
     github: "https://github.com/JS-JeevaSaravanan/js-portfolio",
   },
   {
-    num: "05",
+    num: "06",
     category: "Tasks",
     title: "Task Manager",
     description:
@@ -133,7 +155,7 @@ const projects = [
     github: "https://github.com/JS-JeevaSaravanan/Task-Manager-app",
   },
   {
-    num: "06",
+    num: "07",
     category: "Blogger",
     title: "Blog Platform",
     description:
@@ -150,7 +172,7 @@ const projects = [
     github: "https://github.com/JS-JeevaSaravanan/NextJs-14-Blog-App",
   },
   {
-    num: "07",
+    num: "08",
     category: "Weather Site",
     title: "Weather App",
     description:
