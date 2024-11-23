@@ -9,6 +9,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
+        <SpeedInsights />
       </body>
     </html>
   );
