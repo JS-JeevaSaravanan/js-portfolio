@@ -1,9 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
 import {
   Select,
   SelectContent,
@@ -13,9 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
-
 import { motion } from "framer-motion";
 
 const info = [
@@ -37,12 +34,18 @@ const info = [
 ];
 
 const Contact = () => {
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const handleFormChange = (event) => {
+    const form = event.target.closest("form");
+    setIsFormValid(form.checkValidity());
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-
         transition: {
           delay: 2.4,
           duration: 0.4,
@@ -55,7 +58,12 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+              action="https://formsubmit.co/9a81499f210b2d1da86321027e08da0a"
+              method="POST"
+              onChange={handleFormChange}
+            >
               <h3 className="text-4xl text-accent">Let's work together</h3>
 
               <p className="text-white/60">
@@ -66,39 +74,74 @@ const Contact = () => {
 
               {/* input  */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input
+                  type="text"
+                  name="firstname"
+                  placeholder="Firstname *"
+                  required
+                  className={`border ${!isFormValid && "border-red-500"}`}
+                />
+                <Input type="text" name="lastname" placeholder="Lastname" />
+                <Input
+                  type="email"
+                  name="email"
+                  placeholder="Email address *"
+                  required
+                  className={`border ${!isFormValid && "border-red-500"}`}
+                />
+                <Input type="text" name="phone" placeholder="Phone number" />
               </div>
 
-              {/* select  */}
-              <Select>
+              {/* select */}
+              <Select name="service">
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service"></SelectValue>
+                  <SelectValue placeholder="Select Offering"></SelectValue>
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="website">Website Development</SelectItem>
-                    <SelectItem value="app">App Development</SelectItem>
-                    <SelectItem value="fullstack">
-                      Full stack Development
+                    <SelectItem value="freelance_project">
+                      Freelance Project
+                    </SelectItem>
+                    <SelectItem value="job_opportunity">
+                      Job Opportunity
+                    </SelectItem>
+                    <SelectItem value="build_connection">
+                      Build a Connection
                     </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
 
-              {/* text-area  */}
+              {/* text-area */}
               <Textarea
-                className="h-[200px]"
+                className="h-[200px] border"
+                name="message"
                 placeholder="Type your message here."
               />
 
-              {/* btn  */}
-              <Button size="md" className="max-w-40">
-                Send message
-              </Button>
+              {/* btn */}
+              <div className="relative">
+                <div
+                  className={`absolute left-1/2 transform -translate-x-1/2 bottom-8 px-2 py-1 text-sm bg-gray-700 text-white rounded-md opacity-0 group-hover:opacity-100 transition-opacity ${
+                    !isFormValid ? "group" : ""
+                  }`}
+                >
+                  Fill all required details
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={!isFormValid}
+                  className={`max-w-40 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 ${
+                    !isFormValid
+                      ? "opacity-50 cursor-not-allowed"
+                      : "hover:bg-blue-600"
+                  }`}
+                >
+                  Send message
+                </button>
+              </div>
             </form>
           </div>
 

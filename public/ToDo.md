@@ -1,7 +1,7 @@
 ## Tasks Pending
 
 - [ ] deploy markdown project and update the live link
-- [ ] contact form implementation
+- [x] contact form implementation
 - [ ] clean up unused fonts, images and others
 - [ ] integrate typescript
 - [ ] integrate prettier
