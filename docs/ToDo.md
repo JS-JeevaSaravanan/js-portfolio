@@ -14,3 +14,4 @@
 - [ ] Food tracking project
 - [ ] contact form validation look and feel + fields required
 - [ ] contact form forms auto redirect if possible with contacted status
+- [ ] remove unwanted projects and bold current projects in highlighted manner

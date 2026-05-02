@@ -18,9 +18,9 @@ const Home = () => {
             </h1>
             <p className="max-w-[500px mb-9 text-white/80">
               A Full Stack Developer skilled in building high-performance web
-              applications using React, Next.js, Node.js, and Python. I enjoy
-              crafting seamless user experiences and solving complex challenges
-              with innovative solutions.
+              applications using React, Next.js, Node.js, Python and SQL. I
+              enjoy crafting seamless user experiences and solving complex
+              challenges with innovative solutions.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-2">
