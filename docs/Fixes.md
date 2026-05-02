@@ -73,3 +73,148 @@ If you want, I can:
 Generate improved bullet points for each Experience role from your current data.
 Draft case-study templates for your top 3 projects.
 Produce a single-page ATS-friendly resume copy from your current content.
+
+
+Got it — here’s a **Markdown checklist** you can tick off as you complete each item:
+
+---
+
+# ✅ Portfolio & Resume Checklist
+
+## 🔴 High Priority
+
+* [ ] Fix email inconsistency (use `jeevatamil2000@gmail.com` everywhere)
+
+* [ ] Fix typo in `about.info` (`filedName` → `fieldName`)
+
+* [ ] Fix JSX className bug in `page.jsx`
+
+* [ ] Add 2–4 measurable achievement bullets for each experience role
+
+* [ ] Include metrics (%, users, performance, time saved) in each role
+
+* [ ] Convert top 3 projects into case studies:
+
+  * [ ] Markdown Editor
+  * [ ] Torrent Web
+  * [ ] Blog Platform
+
+* [ ] Add proper demos for all projects:
+
+  * [ ] Replace broken/empty live links
+  * [ ] Add GIF/video demos where needed
+  * [ ] Add local setup instructions in README
+
+* [ ] Improve all GitHub READMEs:
+
+  * [ ] Summary
+  * [ ] Tech stack
+  * [ ] Setup instructions
+  * [ ] Screenshots/GIFs
+  * [ ] Architecture notes
+  * [ ] License
+  * [ ] Badges (build/coverage)
+
+* [ ] Add ATS-friendly keywords to portfolio:
+
+  * [ ] React, Next.js, Node.js, Python
+  * [ ] Docker, CI/CD
+  * [ ] AWS/GCP/Azure
+  * [ ] REST/GraphQL
+  * [ ] SQL/NoSQL, Redis
+  * [ ] Jest/Cypress
+
+---
+
+## 🟡 Medium Priority
+
+* [ ] Rewrite About/Summary (short + impact-focused)
+
+* [ ] Expand experience entries:
+
+  * [ ] Add responsibility bullets
+  * [ ] Add measurable outcomes
+  * [ ] Add scale (team/users)
+
+* [ ] Fix resume/contact consistency:
+
+  * [ ] Same email everywhere
+  * [ ] Format phone: `+91 90807 04586`
+
+* [ ] Strengthen resume experience:
+
+  * [ ] Add 3–6 bullets per role
+  * [ ] Include performance improvements
+  * [ ] Include business impact
+
+* [ ] Improve project pages:
+
+  * [ ] Role
+  * [ ] Problem
+  * [ ] Solution
+  * [ ] Tech stack
+  * [ ] Timeline
+  * [ ] Contributions
+  * [ ] Results/lessons
+
+* [ ] Fix broken/misleading project links
+
+* [ ] Add metrics across all content
+
+* [ ] Improve skills section:
+
+  * [ ] Group by category
+  * [ ] Add proficiency levels
+  * [ ] Link to proof (projects/PRs)
+
+* [ ] Improve GitHub profile:
+
+  * [ ] Add READMEs to all repos
+  * [ ] Pin 4–6 best repos
+  * [ ] Link repos in portfolio
+
+* [ ] Improve resume summary:
+
+  * [ ] Add target roles
+  * [ ] Highlight key tech
+  * [ ] Include 1 strong achievement
+
+* [ ] Make resume ATS-friendly:
+
+  * [ ] Clean headings
+  * [ ] Keyword optimization
+  * [ ] Proper PDF formatting
+
+---
+
+## 🟢 Low Priority
+
+* [ ] Add testimonials/references
+
+* [ ] Write blog posts or case studies
+
+* [ ] Add certifications & courses
+
+* [ ] Add architecture diagrams
+
+* [ ] Add short project video walkthroughs
+
+* [ ] Mention team collaboration (Agile, tools, team size)
+
+* [ ] Add “What I’m looking for” section
+
+---
+
+## ⚡ Quick Wins
+
+* [ ] Ensure one consistent email & phone everywhere
+* [ ] Fix all typos (e.g., `fieldName`)
+* [ ] Ensure every project has:
+
+  * [ ] Live demo OR
+  * [ ] Video demo OR
+  * [ ] Explanation if private
+* [ ] Add case-study links for top projects
+* [ ] Update all repo READMEs
+
+---
