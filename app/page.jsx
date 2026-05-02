@@ -16,7 +16,7 @@ const Home = () => {
               Hello I'm <br />{" "}
               <span className="text-accent">Jeeva Saravanan</span>
             </h1>
-            <p className="max-w-[500px mb-9 text-white/80">
+            <p className="max-w-[500px] mb-9 text-white/80">
               A Full Stack Developer skilled in building high-performance web
               applications using React, Next.js, Node.js, Python and SQL. I
               enjoy crafting seamless user experiences and solving complex

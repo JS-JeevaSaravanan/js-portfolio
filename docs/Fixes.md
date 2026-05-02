@@ -75,146 +75,155 @@ Draft case-study templates for your top 3 projects.
 Produce a single-page ATS-friendly resume copy from your current content.
 
 
-Got it — here’s a **Markdown checklist** you can tick off as you complete each item:
+**checklist** 
+You’re right—right now it’s a mix of **tasks + notes**, which makes it harder to track progress. A good checklist should have **clear, actionable, checkable items only**.
+
+Here’s a cleaner, more “trackable” version of your checklist 👇
 
 ---
 
-# ✅ Portfolio & Resume Checklist
+## ✅ Portfolio & Resume Checklist (Improved)
 
-## 🔴 High Priority
+### 🔴 High Priority
 
-* [ ] Fix email inconsistency (use `jeevatamil2000@gmail.com` everywhere)
+* [x] Replace all emails with `jeevatamil2000@gmail.com`
+* [x] Fix typo in `about.info` (`filedName` → `fieldName`)
+* [x] Fix `className` issue in `page.jsx`
 
-* [ ] Fix typo in `about.info` (`filedName` → `fieldName`)
+#### Experience & Impact
 
-* [ ] Fix JSX className bug in `page.jsx`
+* [ ] Add 2–4 achievement bullets for each role
+* [ ] Add at least 1 metric (%, users, time saved, etc.) per role
 
-* [ ] Add 2–4 measurable achievement bullets for each experience role
+#### Projects → Case Studies
 
-* [ ] Include metrics (%, users, performance, time saved) in each role
+* [ ] Convert **Markdown Editor** into a case study
+* [ ] Convert **Torrent Web** into a case study
+* [ ] Convert **Blog Platform** into a case study
 
-* [ ] Convert top 3 projects into case studies:
+#### Project Demos
 
-  * [ ] Markdown Editor
-  * [ ] Torrent Web
-  * [ ] Blog Platform
+* [ ] Replace all broken or empty demo links
+* [ ] Add GIF or video demo for each project
+* [ ] Add setup instructions in every README
 
-* [ ] Add proper demos for all projects:
+#### GitHub README Improvements
 
-  * [ ] Replace broken/empty live links
-  * [ ] Add GIF/video demos where needed
-  * [ ] Add local setup instructions in README
+* [ ] Add summary to each repo
+* [ ] Add tech stack section
+* [ ] Add setup instructions
+* [ ] Add screenshots or GIFs
+* [ ] Add architecture notes
+* [ ] Add license
+* [ ] Add badges (build, coverage, etc.)
 
-* [ ] Improve all GitHub READMEs:
+#### ATS Keywords
 
-  * [ ] Summary
-  * [ ] Tech stack
-  * [ ] Setup instructions
-  * [ ] Screenshots/GIFs
-  * [ ] Architecture notes
-  * [ ] License
-  * [ ] Badges (build/coverage)
-
-* [ ] Add ATS-friendly keywords to portfolio:
-
-  * [ ] React, Next.js, Node.js, Python
-  * [ ] Docker, CI/CD
-  * [ ] AWS/GCP/Azure
-  * [ ] REST/GraphQL
-  * [ ] SQL/NoSQL, Redis
-  * [ ] Jest/Cypress
-
----
-
-## 🟡 Medium Priority
-
-* [ ] Rewrite About/Summary (short + impact-focused)
-
-* [ ] Expand experience entries:
-
-  * [ ] Add responsibility bullets
-  * [ ] Add measurable outcomes
-  * [ ] Add scale (team/users)
-
-* [ ] Fix resume/contact consistency:
-
-  * [ ] Same email everywhere
-  * [ ] Format phone: `+91 90807 04586`
-
-* [ ] Strengthen resume experience:
-
-  * [ ] Add 3–6 bullets per role
-  * [ ] Include performance improvements
-  * [ ] Include business impact
-
-* [ ] Improve project pages:
-
-  * [ ] Role
-  * [ ] Problem
-  * [ ] Solution
-  * [ ] Tech stack
-  * [ ] Timeline
-  * [ ] Contributions
-  * [ ] Results/lessons
-
-* [ ] Fix broken/misleading project links
-
-* [ ] Add metrics across all content
-
-* [ ] Improve skills section:
-
-  * [ ] Group by category
-  * [ ] Add proficiency levels
-  * [ ] Link to proof (projects/PRs)
-
-* [ ] Improve GitHub profile:
-
-  * [ ] Add READMEs to all repos
-  * [ ] Pin 4–6 best repos
-  * [ ] Link repos in portfolio
-
-* [ ] Improve resume summary:
-
-  * [ ] Add target roles
-  * [ ] Highlight key tech
-  * [ ] Include 1 strong achievement
-
-* [ ] Make resume ATS-friendly:
-
-  * [ ] Clean headings
-  * [ ] Keyword optimization
-  * [ ] Proper PDF formatting
+* [ ] Add React, Next.js, Node.js, Python
+* [ ] Add Docker and CI/CD
+* [ ] Add AWS/GCP/Azure
+* [ ] Add REST/GraphQL
+* [ ] Add SQL/NoSQL and Redis
+* [ ] Add Jest/Cypress
 
 ---
 
-## 🟢 Low Priority
+### 🟡 Medium Priority
 
-* [ ] Add testimonials/references
+#### About & Summary
 
-* [ ] Write blog posts or case studies
+* [ ] Rewrite About section (short + impact-focused)
 
-* [ ] Add certifications & courses
+#### Experience Section
 
+* [ ] Add responsibilities for each role
+* [ ] Add measurable outcomes
+* [ ] Add scale (team size, users, etc.)
+
+#### Contact Consistency
+
+* [ ] Ensure same email everywhere
+* [ ] Format phone as `+91 90807 04586`
+
+#### Resume Strength
+
+* [ ] Add 3–6 bullets per role
+* [ ] Include performance improvements
+* [ ] Include business impact
+
+#### Project Pages
+
+* [ ] Add role description
+
+* [ ] Add problem statement
+
+* [ ] Add solution explanation
+
+* [ ] Add tech stack
+
+* [ ] Add timeline
+
+* [ ] Add contributions
+
+* [ ] Add results or lessons learned
+
+* [ ] Fix all broken or misleading project links
+
+* [ ] Add metrics across projects
+
+#### Skills Section
+
+* [ ] Group skills by category
+* [ ] Add proficiency levels
+* [ ] Link skills to proof (projects or PRs)
+
+#### GitHub Profile
+
+* [ ] Add README to every repo
+* [ ] Pin top 4–6 repositories
+* [ ] Link repos in portfolio
+
+#### Resume Optimization
+
+* [ ] Add target roles to summary
+* [ ] Highlight key technologies
+* [ ] Include 1 strong achievement
+* [ ] Use clean headings
+* [ ] Optimize keywords for ATS
+* [ ] Export properly formatted PDF
+
+---
+
+### 🟢 Low Priority
+
+* [ ] Add testimonials or references
+* [ ] Write 1–2 blog posts or case studies
+* [ ] Add certifications and courses
 * [ ] Add architecture diagrams
-
-* [ ] Add short project video walkthroughs
-
+* [ ] Add project video walkthroughs
 * [ ] Mention team collaboration (Agile, tools, team size)
-
 * [ ] Add “What I’m looking for” section
 
 ---
 
-## ⚡ Quick Wins
+### ⚡ Quick Wins
 
-* [ ] Ensure one consistent email & phone everywhere
-* [ ] Fix all typos (e.g., `fieldName`)
-* [ ] Ensure every project has:
+* [ ] Ensure one consistent email and phone everywhere
+* [ ] Fix all typos across project and resume
+* [ ] Ensure every project has at least one:
 
-  * [ ] Live demo OR
-  * [ ] Video demo OR
-  * [ ] Explanation if private
-* [ ] Add case-study links for top projects
+  * [ ] Live demo
+  * [ ] OR video demo
+  * [ ] OR explanation if private
+* [ ] Add case study links for top projects
 * [ ] Update all repo READMEs
+
+---
+
+### Why this is better
+
+* Every line is now **a single actionable task**
+* No “loose bullets” that you can’t check
+* Easier to scan + actually complete
 
 ---

@@ -54,35 +54,35 @@ const about = {
   description: `I am a dedicated Full Stack Developer with a passion for crafting seamless, scalable applications. With a strong foundation in both frontend and backend technologies, I bring a holistic approach to problem-solving and project execution. I thrive on tackling complex challenges, optimizing performance, and ensuring high-quality code. My experience spans developing interactive UIs, managing efficient data flow, and implementing modern development practices. I'm driven by continuous learning and contributing innovative solutions to make impactful software.`,
   info: [
     {
-      filedName: "Name",
+      fieldName: "Name",
       fieldValue: "Jeeva Saravanan",
     },
     {
-      filedName: "Mobile",
+      fieldName: "Mobile",
       fieldValue: "(+91) 9080704586",
     },
     {
-      filedName: "Experience",
+      fieldName: "Experience",
       fieldValue: "4+ Years",
     },
     {
-      filedName: "Email",
+      fieldName: "Email",
       fieldValue: "jeevatamil2000@gmail.com",
     },
     {
-      filedName: "Nationality",
+      fieldName: "Nationality",
       fieldValue: "Indian",
     },
     {
-      filedName: "Expertise",
+      fieldName: "Expertise",
       fieldValue: "Fullstack",
     },
     {
-      filedName: "Freelance",
+      fieldName: "Freelance",
       fieldValue: "Available",
     },
     {
-      filedName: "Languages",
+      fieldName: "Languages",
       fieldValue: "English, Tamil",
     },
   ],
@@ -413,7 +413,7 @@ const Resume = () => {
                         key={index}
                         className="flex items-center justify-center xl:justify-start gap-4"
                       >
-                        <span className="text-white/60">{item.filedName}</span>
+                        <span className="text-white/60">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>
                     );
