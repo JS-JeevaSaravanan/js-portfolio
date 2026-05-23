@@ -70,14 +70,38 @@ I specialize in React, Next.js, Node.js, and Python, with strong expertise in sy
 I enjoy solving complex problems and crafting seamless user experiences.
   `,
   info: [
-    { label: "Name", value: "Jeeva Saravanan" },
-    { label: "Role", value: "Full Stack Developer" },
-    { label: "Experience", value: "5+ Years" },
-    { label: "Location", value: "India" },
-    { label: "Email", value: "jeevatamil2000@gmail.com" },
-    { label: "Phone", value: "+91 90807 04586" },
-    { label: "Languages", value: "English, Tamil" },
-    { label: "Freelance", value: "Available" },
+    {
+      filedName: "Name",
+      fieldValue: "Jeeva Saravanan",
+    },
+    {
+      filedName: "Mobile",
+      fieldValue: "(+91) 9080704586",
+    },
+    {
+      filedName: "Experience",
+      fieldValue: "5+ Years",
+    },
+    {
+      filedName: "Email",
+      fieldValue: "jeevatamil2000@gmail.com",
+    },
+    {
+      filedName: "Nationality",
+      fieldValue: "Indian",
+    },
+    {
+      filedName: "Expertise",
+      fieldValue: "Fullstack",
+    },
+    {
+      filedName: "Freelance",
+      fieldValue: "Available",
+    },
+    {
+      filedName: "Languages",
+      fieldValue: "English, Tamil",
+    },
   ],
 };
 
