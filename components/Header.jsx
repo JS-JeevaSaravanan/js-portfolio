@@ -13,43 +13,45 @@ import MobileNav from "./MobileNav";
 import { navigationPaths } from "@/constants/navigation";
 
 const Header = () => {
-  const pathname = usePathname();
+    const pathname = usePathname();
 
-  const handleButtonClick = (e) => {
-    if (pathname === navigationPaths.contact) {
-      e.preventDefault();
-      alert("Please fill and send the message.");
-    }
-  };
+    const handleButtonClick = (e) => {
+        if (pathname === navigationPaths.contact) {
+            e.preventDefault();
+            alert("Please fill and send the message.");
+        }
+    };
 
-  return (
-    <header className="py-8 xl:py-12 text-white">
-      <div className="container mx-auto flex justify-between items-center">
-        {/*Logo*/}
-        <Link href={navigationPaths.home}>
-          <h1 className="text-4xl fond-semibold">
-            JS
-            <span className="text-accent">.</span>
-          </h1>
-        </Link>
+    return (
+        <header className="py-8 xl:py-12 text-white">
+            <div className="container mx-auto flex justify-between items-center">
+                {/*Logo*/}
+                <Link href={navigationPaths.home}>
+                    <h1 className="text-4xl fond-semibold">
+                        JS
+                        <span className="text-accent">.</span>
+                    </h1>
+                </Link>
 
-        {/* desktop nav & hire me button */}
-        <div className="hidden xl:flex items-center gap-8">
-          <Nav />
-          {
-            <Link href={navigationPaths.contact} passHref>
-              <Button onClick={handleButtonClick}>Immediate Joinee</Button>
-            </Link>
-          }
-        </div>
+                {/* desktop nav & hire me button */}
+                <div className="hidden xl:flex items-center gap-8">
+                    <Nav />
+                    {
+                        <Link href={navigationPaths.contact} passHref>
+                            <Button onClick={handleButtonClick}>
+                                15-Day Joiner
+                            </Button>
+                        </Link>
+                    }
+                </div>
 
-        {/* mobile nav */}
-        <div className="xl:hidden">
-          <MobileNav />
-        </div>
-      </div>
-    </header>
-  );
+                {/* mobile nav */}
+                <div className="xl:hidden">
+                    <MobileNav />
+                </div>
+            </div>
+        </header>
+    );
 };
 
 export default Header;

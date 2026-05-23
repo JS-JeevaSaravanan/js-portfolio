@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { TbBrandLeetcode } from "react-icons/tb";
 
 const socials = [
@@ -10,10 +10,9 @@ const socials = [
     path: "https://www.linkedin.com/in/jeeva-saravanan-a22951166/",
   },
   {
-    icon: <FaStackOverflow />,
-    path: "https://stackoverflow.com/users/15811844/js-jeevasaravanan",
+    icon: <TbBrandLeetcode />,
+    path: "https://leetcode.com/JS_JeevaSaravanan",
   },
-  { icon: <TbBrandLeetcode />, path: "https://leetcode.com/JS_JeevaSaravanan" },
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
